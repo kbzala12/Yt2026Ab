@@ -1,0 +1,12 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 1
+  # The maximum time a server action is allowed to run.
+  # App Hosting will send a SIGTERM signal to your container if it exceeds
+  # this time.
+  timeoutSeconds: 60
+firebase deploy --only apphosting
